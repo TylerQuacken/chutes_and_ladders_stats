@@ -49,5 +49,7 @@ fig, axs = plt.subplots(2)
 axs[0].plot(valueMap[:101])
 axs[0].set_ylabel('Value')
 axs[1].set_ylabel('Optimal Action')
+axs[1].set_xlabel('Tile')
 axs[1].plot(policy[:101] + 1)   # add 1 because action '0' moves you forward 1 tile
+fig.suptitle('Optimal Policy for Chutes and Ladders')
 plt.show()
